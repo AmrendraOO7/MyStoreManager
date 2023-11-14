@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SoftwareProtector/1.0.5.1": {
+        "runtime": {
+          "lib/SKGL.dll": {
+            "assemblyVersion": "2.0.4.1",
+            "fileVersion": "2.0.4.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SoftwareProtector/1.0.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w0+ydwIYY7kYHYExXOs8C4g9kSXgnJTDoYiXXDChk64kVRp05JMDP3LKMT+ylt78+2SYEs9GuZjgLROP+rGfTA==",
+      "path": "softwareprotector/1.0.5.1",
+      "hashPath": "softwareprotector.1.0.5.1.nupkg.sha512"
+    }
+  }
+}

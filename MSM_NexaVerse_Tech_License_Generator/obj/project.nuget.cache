@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "N68bta70aH0+QMzyWFwQRUjOEdn3lllc92KB2pxBkjVwLaY1cwulhyYiCuo7qIWMoxL3rPt65NFgY7Vl1RErLw==",
+  "success": true,
+  "projectFilePath": "D:\\All Workspaces\\My Workspace\\Desktop App\\MyStoreManager_2.0_Main\\MyStoreManager\\MSM_NexaVerse_Tech_License_Generator\\MSM_NexaVerse_Tech_License_Generator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eramr\\.nuget\\packages\\softwareprotector\\1.0.5.1\\softwareprotector.1.0.5.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SoftwareProtector 1.0.5.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SoftwareProtector",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "SoftwareProtector/1.0.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/SKGL.dll": {}
+        },
+        "runtime": {
+          "lib/SKGL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SoftwareProtector/1.0.5.1": {
+      "sha512": "w0+ydwIYY7kYHYExXOs8C4g9kSXgnJTDoYiXXDChk64kVRp05JMDP3LKMT+ylt78+2SYEs9GuZjgLROP+rGfTA==",
+      "type": "package",
+      "path": "softwareprotector/1.0.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/LINCENSE.txt",
+        "content/Software Protector.exe",
+        "lib/SKGL.dll",
+        "softwareprotector.1.0.5.1.nupkg.sha512",
+        "softwareprotector.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "SoftwareProtector >= 1.0.5.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\eramr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\All Workspaces\\My Workspace\\Desktop App\\MyStoreManager_2.0_Main\\MyStoreManager\\MSM_NexaVerse_Tech_License_Generator\\MSM_NexaVerse_Tech_License_Generator.csproj",
+      "projectName": "MSM_NexaVerse_Tech_License_Generator",
+      "projectPath": "D:\\All Workspaces\\My Workspace\\Desktop App\\MyStoreManager_2.0_Main\\MyStoreManager\\MSM_NexaVerse_Tech_License_Generator\\MSM_NexaVerse_Tech_License_Generator.csproj",
+      "packagesPath": "C:\\Users\\eramr\\.nuget\\packages\\",
+      "outputPath": "D:\\All Workspaces\\My Workspace\\Desktop App\\MyStoreManager_2.0_Main\\MyStoreManager\\MSM_NexaVerse_Tech_License_Generator\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\eramr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "SoftwareProtector": {
+            "target": "Package",
+            "version": "[1.0.5.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SoftwareProtector 1.0.5.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SoftwareProtector",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
