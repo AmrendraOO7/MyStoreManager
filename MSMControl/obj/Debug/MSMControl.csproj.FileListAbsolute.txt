@@ -557,8 +557,6 @@ D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManage
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\CircularProgressBar.dll
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\ClosedXML.dll
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\Dapper.dll
-D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\Devart.Data.dll
-D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\Devart.Data.PostgreSql.dll
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\DocumentFormat.OpenXml.dll
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\DotVVM.Core.dll
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\DotVVM.Framework.dll
