@@ -36,7 +36,7 @@ namespace MyStoreManager.Setup
 
         DataTable dt = new DataTable();
         private readonly IMainMaster mainMaster = new ClsMainMaster();
-        clsPleaseWaitForm PleaseWait = new clsPleaseWaitForm();
+        //clsPleaseWaitForm PleaseWait = new clsPleaseWaitForm();
         public frm_UserLogin()
         {
             InitializeComponent();
@@ -89,7 +89,7 @@ namespace MyStoreManager.Setup
         private void Btn_Login_Click(object sender, EventArgs e)
         {
             //progress bar implememtation starts
-            PleaseWait.Show();
+            //PleaseWait.Show();
             UpdateTables();
 
             var licsenceInfo = mainMaster.getlicsence();
@@ -104,12 +104,12 @@ namespace MyStoreManager.Setup
                 Global.remainingDays = days = validate.DaysLeft;
                 if (days == 1 || days == 2 || days == 3 || days == 4 || days == 5 )
                 {
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     MessageBox.Show($@"Your License is about to expire in {days} days." + "\nPlease contact Tech NexaVerse Solution Pvt. Ltd." + "or Visit us at (www.technexaverse.com)", "Reminder", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if(days < 0)
                 {
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     MessageBox.Show($@"Your License is expire." + "\nPlease contact Tech NexaVerse Solution Pvt. Ltd." + "or Visit us at (www.technexaverse.com)", "Reminder", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -119,7 +119,7 @@ namespace MyStoreManager.Setup
 
                 if (days <= 0)
                 {
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     var frm = new frm_License_Entry();
                     frm.ShowDialog();
                     MessageBox.Show("Closing/Restarting application!!", "Expired", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -128,7 +128,7 @@ namespace MyStoreManager.Setup
             }
             else
             {
-                PleaseWait.Close();
+                //PleaseWait.Close();
                 var frm = new frm_License_Entry();
                 frm.ShowDialog();
                 MessageBox.Show("Closing/Restarting application!!", "Please Start", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -176,21 +176,21 @@ namespace MyStoreManager.Setup
                     //if (purchase != null) Global.purchaseCheck = purchase;
                     dt = mainMaster.checkTransectionOnSE();
                     Global.salesCheck = (int)dt.Rows[0]["SABills"];
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     this.Hide();                      //this.Close();  // using this will open MDI parent on login page without closing it.
                     var frm_MDI_UserPanel = new MDI_UserPanel();
                     frm_MDI_UserPanel.ShowDialog();
                 }
                 else
                 { 
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     MessageBox.Show("Entered Information doesnot matched..!!", "TryAgain", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtUserID.Focus();
                 }
             }
             else
             {
-                PleaseWait.Close();
+                //PleaseWait.Close();
                 MessageBox.Show("Entered Information doesnot Exists..!!", "Please Check", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUserID.Focus();
             }

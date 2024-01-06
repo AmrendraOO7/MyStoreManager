@@ -41,7 +41,7 @@ namespace MyStoreManager.Setup
         public string DbName = "master";
 
         int IsMDIActive = MDI_UserPanel.IsFormActive;
-        clsPleaseWaitForm PleaseWait = new clsPleaseWaitForm();
+        //clsPleaseWaitForm PleaseWait = new clsPleaseWaitForm();
         public frm_CompanySetup()
         {
             InitializeComponent();
@@ -321,12 +321,12 @@ namespace MyStoreManager.Setup
                         {
                             if (FormIsOK())
                             {
-                                PleaseWait.Show();
+                                ////PleaseWait.Show();
                                 if (CreateDatabase() == 1)
                                 {
                                     if (Company_Setup() != 0)
                                     {
-                                        PleaseWait.Close();
+                                        ////PleaseWait.Close();
                                         MessageBox.Show($@"Company {ToPerform} successfully Done...!!.", "Done..!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                         if (IsMDIActive == 1) //this.Hide();
                                         {
@@ -348,7 +348,7 @@ namespace MyStoreManager.Setup
                             }
                             else
                             {
-                                PleaseWait.Close();
+                                //PleaseWait.Close();
                                 MessageBox.Show("Error...!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 return;
                             }
@@ -358,10 +358,10 @@ namespace MyStoreManager.Setup
                         {
                             if (FormIsOK())
                             {
-                                PleaseWait.Show();
+                                //PleaseWait.Show();
                                 if (Company_Setup() != 0)
                                 {
-                                    PleaseWait.Close();
+                                    //PleaseWait.Close();
                                     MessageBox.Show($@"Company {ToPerform} successfully Done...!!.", "Done..!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     if (IsMDIActive == 1) this.Hide();
                                     else
@@ -379,7 +379,7 @@ namespace MyStoreManager.Setup
                         {
                             if (FormIsOK())
                             {
-                                PleaseWait.Show();
+                                //PleaseWait.Show();
                                 if (ID != 0)
                                 {
                                     Company_Setup();
@@ -410,7 +410,7 @@ namespace MyStoreManager.Setup
                                             var val = killconndropdb;
                                             if (killconndropdb != 0)
                                             {
-                                                PleaseWait.Close();
+                                                //PleaseWait.Close();
                                                 MessageBox.Show($@"Company {ToPerform} successfully Done...!!.", "Done..!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                                 Close();
                                                 Application.Exit();
@@ -419,7 +419,7 @@ namespace MyStoreManager.Setup
                                             }
                                             else
                                             {
-                                                PleaseWait.Close();
+                                                //PleaseWait.Close();
                                                 MessageBox.Show($@"Company {ToPerform} Partially Completed...!!, Please Close and Start application.", "Partially Deleted..!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                                 Close();
                                                 Application.Exit();

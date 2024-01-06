@@ -19,7 +19,7 @@ namespace MyStoreManager.Setup
         public DateTime dateExpiry;
         public string Key = string.Empty;
         public int days;
-        clsPleaseWaitForm PleaseWait = new clsPleaseWaitForm();
+        //clsPleaseWaitForm PleaseWait = new clsPleaseWaitForm();
         public frm_License_Entry()
         {
             InitializeComponent();
@@ -58,10 +58,10 @@ namespace MyStoreManager.Setup
             if (txt_Password.Text == "MSM@admin_2023")
             {
                 KeyValidator();
-                PleaseWait.Show();
+                //PleaseWait.Show();
                 if (Global.licenseKey != null && txt_Key.Text == Global.licenseKey)
                 {
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     MessageBox.Show("license Key already in use", "Done", MessageBoxButtons.OK, MessageBoxIcon.None);
                     txt_Key.Focus();
                     return;
@@ -70,7 +70,7 @@ namespace MyStoreManager.Setup
                 var Ok = Execute.ExecuteNonQueryOnMain(query);
                 if (Ok != 0)
                 {
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     MessageBox.Show("license updated", "Done", MessageBoxButtons.OK, MessageBoxIcon.None);
                     clear();
                 }
@@ -78,7 +78,7 @@ namespace MyStoreManager.Setup
             }
             else
             {
-                PleaseWait.Close ();
+                //PleaseWait.Close ();
                 MessageBox.Show("Wrong Credential!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
