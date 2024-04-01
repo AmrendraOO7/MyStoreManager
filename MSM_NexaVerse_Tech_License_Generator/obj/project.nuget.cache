@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N68bta70aH0+QMzyWFwQRUjOEdn3lllc92KB2pxBkjVwLaY1cwulhyYiCuo7qIWMoxL3rPt65NFgY7Vl1RErLw==",
+  "dgSpecHash": "ZgS4VG6FljfLLQBUMMBUSDyULfy7+fdlIeiWopze/Gx1H70Ej3oT59JBaGVAHX5BAf9rCP2PE5xGq5XWYp+rfQ==",
   "success": true,
   "projectFilePath": "D:\\All Workspaces\\My Workspace\\Desktop App\\MyStoreManager_2.0_Main\\MyStoreManager\\MSM_NexaVerse_Tech_License_Generator\\MSM_NexaVerse_Tech_License_Generator.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\eramr\\.nuget\\packages\\softwareprotector\\1.0.5.1\\softwareprotector.1.0.5.1.nupkg.sha512"
+    "C:\\Users\\Amrendra\\.nuget\\packages\\softwareprotector\\1.0.5.1\\softwareprotector.1.0.5.1.nupkg.sha512"
   ],
   "logs": [
     {

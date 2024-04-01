@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MSM_NexaVerse_Tech_License_Generator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec25286e88191de0ccd44812ed1adff508b02757")]
 [assembly: System.Reflection.AssemblyProductAttribute("MSM_NexaVerse_Tech_License_Generator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MSM_NexaVerse_Tech_License_Generator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
