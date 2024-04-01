@@ -67,8 +67,10 @@ namespace MyStoreManager.Setup
             if (isDevelopmentMode)
             {
                 // Development mode code
-                txtUserID.Text = "admin";
-                txtPassword.Text = "msm@admin";
+                //txtUserID.Text = "admin";
+                //txtPassword.Text = "msm@admin";
+                txtUserID.Clear();
+                txtPassword.Clear();
             }
             else
             {

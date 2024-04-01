@@ -812,8 +812,8 @@ D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManage
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\obj\Debug\MSMControl.csproj.GenerateResource.cache
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\obj\Debug\MSMControl.GeneratedMSBuildEditorConfig.editorconfig
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\obj\Debug\MSMControl.csproj.CoreCompileInputs.cache
-D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\obj\Debug\MSMControl.csproj.CopyComplete
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\obj\Debug\MSMControl.dll
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\obj\Debug\MSMControl.pdb
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\Devart.Data.dll
 D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\bin\Debug\Devart.Data.PostgreSql.dll
+D:\All Workspaces\My Workspace\Desktop App\MyStoreManager_2.0_Main\MyStoreManager\MSMControl\obj\Debug\MSMControl.csproj.Up2Date
