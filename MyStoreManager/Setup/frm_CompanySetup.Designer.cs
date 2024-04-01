@@ -102,10 +102,11 @@ namespace MyStoreManager.Setup
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(677, 258);
+            this.panel1.Size = new System.Drawing.Size(676, 256);
             this.panel1.TabIndex = 0;
             // 
             // contextMenuStrip
@@ -149,10 +150,10 @@ namespace MyStoreManager.Setup
             // 
             this.BtnProgressBar.BackColor = System.Drawing.Color.White;
             this.BtnProgressBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnProgressBar.Location = new System.Drawing.Point(0, 244);
+            this.BtnProgressBar.Location = new System.Drawing.Point(0, 242);
             this.BtnProgressBar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnProgressBar.Name = "BtnProgressBar";
-            this.BtnProgressBar.Size = new System.Drawing.Size(673, 10);
+            this.BtnProgressBar.Size = new System.Drawing.Size(672, 10);
             this.BtnProgressBar.TabIndex = 26;
             this.BtnProgressBar.Value = 100;
             // 
@@ -282,7 +283,7 @@ namespace MyStoreManager.Setup
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.Logo_PNG;
+            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo1;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(3, 4);
             this.panel3.Name = "panel3";

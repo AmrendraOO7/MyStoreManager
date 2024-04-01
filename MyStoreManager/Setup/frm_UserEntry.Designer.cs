@@ -57,7 +57,6 @@ namespace MyStoreManager.Setup
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsrName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
@@ -90,13 +89,12 @@ namespace MyStoreManager.Setup
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtUsrName);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(677, 348);
+            this.panel1.Size = new System.Drawing.Size(677, 252);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -121,7 +119,7 @@ namespace MyStoreManager.Setup
             this.lbl_Role.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Role.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Role.ForeColor = System.Drawing.Color.GhostWhite;
-            this.lbl_Role.Location = new System.Drawing.Point(551, 258);
+            this.lbl_Role.Location = new System.Drawing.Point(539, 177);
             this.lbl_Role.Name = "lbl_Role";
             this.lbl_Role.Size = new System.Drawing.Size(58, 13);
             this.lbl_Role.TabIndex = 50;
@@ -131,7 +129,7 @@ namespace MyStoreManager.Setup
             // txtRole
             // 
             this.txtRole.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRole.Location = new System.Drawing.Point(180, 250);
+            this.txtRole.Location = new System.Drawing.Point(168, 168);
             this.txtRole.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtRole.MaxLength = 10;
             this.txtRole.Name = "txtRole";
@@ -144,7 +142,7 @@ namespace MyStoreManager.Setup
             // 
             this.btn_Refresh.BackgroundImage = global::MyStoreManager.Properties.Resources.Refresh;
             this.btn_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Refresh.Location = new System.Drawing.Point(3, 322);
+            this.btn_Refresh.Location = new System.Drawing.Point(3, 220);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(25, 23);
             this.btn_Refresh.TabIndex = 49;
@@ -155,7 +153,7 @@ namespace MyStoreManager.Setup
             // 
             this.btnRoleSearch.BackgroundImage = global::MyStoreManager.Properties.Resources.Zoom;
             this.btnRoleSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRoleSearch.Location = new System.Drawing.Point(520, 250);
+            this.btnRoleSearch.Location = new System.Drawing.Point(508, 169);
             this.btnRoleSearch.Name = "btnRoleSearch";
             this.btnRoleSearch.Size = new System.Drawing.Size(25, 23);
             this.btnRoleSearch.TabIndex = 6;
@@ -167,7 +165,7 @@ namespace MyStoreManager.Setup
             // 
             this.btn_Search.BackgroundImage = global::MyStoreManager.Properties.Resources.Zoom;
             this.btn_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Search.Location = new System.Drawing.Point(520, 90);
+            this.btn_Search.Location = new System.Drawing.Point(508, 49);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(25, 23);
             this.btn_Search.TabIndex = 48;
@@ -180,7 +178,7 @@ namespace MyStoreManager.Setup
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label9.Location = new System.Drawing.Point(30, 257);
+            this.label9.Location = new System.Drawing.Point(108, 169);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 14);
             this.label9.TabIndex = 47;
@@ -190,7 +188,7 @@ namespace MyStoreManager.Setup
             // 
             this.txtdepartment.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtdepartment.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdepartment.Location = new System.Drawing.Point(180, 218);
+            this.txtdepartment.Location = new System.Drawing.Point(168, 144);
             this.txtdepartment.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtdepartment.MaxLength = 10;
             this.txtdepartment.Name = "txtdepartment";
@@ -204,7 +202,7 @@ namespace MyStoreManager.Setup
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label6.Location = new System.Drawing.Point(30, 228);
+            this.label6.Location = new System.Drawing.Point(59, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 14);
             this.label6.TabIndex = 44;
@@ -215,7 +213,7 @@ namespace MyStoreManager.Setup
             this.chk_PasswordBtn.AutoSize = true;
             this.chk_PasswordBtn.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_PasswordBtn.ForeColor = System.Drawing.Color.White;
-            this.chk_PasswordBtn.Location = new System.Drawing.Point(520, 187);
+            this.chk_PasswordBtn.Location = new System.Drawing.Point(527, 152);
             this.chk_PasswordBtn.Name = "chk_PasswordBtn";
             this.chk_PasswordBtn.Size = new System.Drawing.Size(129, 20);
             this.chk_PasswordBtn.TabIndex = 43;
@@ -228,7 +226,7 @@ namespace MyStoreManager.Setup
             this.Btn_Ok.BackColor = System.Drawing.Color.White;
             this.Btn_Ok.Font = new System.Drawing.Font("Verdana", 8F);
             this.Btn_Ok.ForeColor = System.Drawing.Color.Indigo;
-            this.Btn_Ok.Location = new System.Drawing.Point(547, 301);
+            this.Btn_Ok.Location = new System.Drawing.Point(557, 208);
             this.Btn_Ok.Name = "Btn_Ok";
             this.Btn_Ok.Size = new System.Drawing.Size(99, 35);
             this.Btn_Ok.TabIndex = 8;
@@ -241,7 +239,7 @@ namespace MyStoreManager.Setup
             this.btn_Delete.BackColor = System.Drawing.Color.White;
             this.btn_Delete.Font = new System.Drawing.Font("Verdana", 8F);
             this.btn_Delete.ForeColor = System.Drawing.Color.Indigo;
-            this.btn_Delete.Location = new System.Drawing.Point(547, 154);
+            this.btn_Delete.Location = new System.Drawing.Point(554, 119);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(99, 35);
             this.btn_Delete.TabIndex = 41;
@@ -254,7 +252,7 @@ namespace MyStoreManager.Setup
             this.btn_Edit.BackColor = System.Drawing.Color.White;
             this.btn_Edit.Font = new System.Drawing.Font("Verdana", 8F);
             this.btn_Edit.ForeColor = System.Drawing.Color.Indigo;
-            this.btn_Edit.Location = new System.Drawing.Point(547, 119);
+            this.btn_Edit.Location = new System.Drawing.Point(554, 84);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(99, 35);
             this.btn_Edit.TabIndex = 40;
@@ -267,7 +265,7 @@ namespace MyStoreManager.Setup
             this.btn_Save.BackColor = System.Drawing.Color.White;
             this.btn_Save.Font = new System.Drawing.Font("Verdana", 8F);
             this.btn_Save.ForeColor = System.Drawing.Color.Indigo;
-            this.btn_Save.Location = new System.Drawing.Point(547, 84);
+            this.btn_Save.Location = new System.Drawing.Point(554, 49);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(99, 35);
             this.btn_Save.TabIndex = 0;
@@ -279,7 +277,7 @@ namespace MyStoreManager.Setup
             // 
             this.txtConfirmPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtConfirmPassword.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(180, 186);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(168, 120);
             this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtConfirmPassword.MaxLength = 15;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
@@ -294,7 +292,7 @@ namespace MyStoreManager.Setup
             this.chk_RoleStatus.Checked = true;
             this.chk_RoleStatus.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chk_RoleStatus.ForeColor = System.Drawing.Color.GhostWhite;
-            this.chk_RoleStatus.Location = new System.Drawing.Point(128, 283);
+            this.chk_RoleStatus.Location = new System.Drawing.Point(116, 201);
             this.chk_RoleStatus.Name = "chk_RoleStatus";
             this.chk_RoleStatus.Size = new System.Drawing.Size(132, 20);
             this.chk_RoleStatus.TabIndex = 10;
@@ -307,7 +305,7 @@ namespace MyStoreManager.Setup
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label8.Location = new System.Drawing.Point(30, 285);
+            this.label8.Location = new System.Drawing.Point(18, 203);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 14);
             this.label8.TabIndex = 36;
@@ -319,7 +317,7 @@ namespace MyStoreManager.Setup
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label5.Location = new System.Drawing.Point(30, 193);
+            this.label5.Location = new System.Drawing.Point(16, 121);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 14);
             this.label5.TabIndex = 26;
@@ -331,7 +329,7 @@ namespace MyStoreManager.Setup
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label4.Location = new System.Drawing.Point(30, 162);
+            this.label4.Location = new System.Drawing.Point(72, 98);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 14);
             this.label4.TabIndex = 26;
@@ -341,7 +339,7 @@ namespace MyStoreManager.Setup
             // 
             this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtPassword.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(180, 154);
+            this.txtPassword.Location = new System.Drawing.Point(168, 96);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtPassword.MaxLength = 15;
             this.txtPassword.Name = "txtPassword";
@@ -354,7 +352,7 @@ namespace MyStoreManager.Setup
             // 
             this.txtLoginID.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtLoginID.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoginID.Location = new System.Drawing.Point(180, 122);
+            this.txtLoginID.Location = new System.Drawing.Point(168, 72);
             this.txtLoginID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtLoginID.MaxLength = 20;
             this.txtLoginID.Name = "txtLoginID";
@@ -369,7 +367,7 @@ namespace MyStoreManager.Setup
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label3.Location = new System.Drawing.Point(30, 131);
+            this.label3.Location = new System.Drawing.Point(85, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 14);
             this.label3.TabIndex = 24;
@@ -378,7 +376,7 @@ namespace MyStoreManager.Setup
             // txtUsrName
             // 
             this.txtUsrName.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsrName.Location = new System.Drawing.Point(180, 90);
+            this.txtUsrName.Location = new System.Drawing.Point(168, 48);
             this.txtUsrName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtUsrName.MaxLength = 19;
             this.txtUsrName.Name = "txtUsrName";
@@ -393,21 +391,11 @@ namespace MyStoreManager.Setup
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(30, 100);
+            this.label2.Location = new System.Drawing.Point(64, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 14);
             this.label2.TabIndex = 22;
             this.label2.Text = "User Name:-";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.Logo_PNG;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(33, 22);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(111, 62);
-            this.panel3.TabIndex = 21;
             // 
             // label1
             // 
@@ -415,7 +403,7 @@ namespace MyStoreManager.Setup
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(248, 40);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 26);
             this.label1.TabIndex = 20;
@@ -425,7 +413,7 @@ namespace MyStoreManager.Setup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 348);
+            this.ClientSize = new System.Drawing.Size(677, 252);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -446,7 +434,6 @@ namespace MyStoreManager.Setup
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

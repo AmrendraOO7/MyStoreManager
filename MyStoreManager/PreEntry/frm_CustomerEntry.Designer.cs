@@ -441,6 +441,7 @@ namespace MyStoreManager.PreEntry
             // 
             // listView
             // 
+            this.listView.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView.ForeColor = System.Drawing.Color.Indigo;
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(598, 52);

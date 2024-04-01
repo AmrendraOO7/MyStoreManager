@@ -268,7 +268,7 @@ namespace MyStoreManager.Setup
             // 
             this.panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             this.panel1.BackColor = System.Drawing.Color.GhostWhite;
-            this.panel1.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo;
+            this.panel1.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Controls.Add(this.btn_Minimize);
             this.panel1.Controls.Add(this.btn_Close);
@@ -498,7 +498,7 @@ namespace MyStoreManager.Setup
             this.purcahseGoodsToolStripMenuItem,
             this.purchaseReturnToolStripMenuItem});
             this.purchaseEntryToolStripMenuItem.Name = "purchaseEntryToolStripMenuItem";
-            this.purchaseEntryToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.purchaseEntryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.purchaseEntryToolStripMenuItem.Text = "Purchase";
             // 
             // purchaseOrderToolStripMenuItem
@@ -533,7 +533,7 @@ namespace MyStoreManager.Setup
             this.salesEntryPOSToolStripMenuItem,
             this.salesReturnToolStripMenuItem1});
             this.salesEntryToolStripMenuItem.Name = "salesEntryToolStripMenuItem";
-            this.salesEntryToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.salesEntryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salesEntryToolStripMenuItem.Text = "Sales";
             // 
             // salesEntryPOSToolStripMenuItem

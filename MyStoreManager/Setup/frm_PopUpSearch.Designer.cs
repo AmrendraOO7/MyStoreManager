@@ -34,7 +34,6 @@ namespace MyStoreManager.Setup
             this.DataGrid = new System.Windows.Forms.DataGridView();
             this.btn_OK = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
             this.txt_Search = new System.Windows.Forms.TextBox();
             this.btn_Search = new System.Windows.Forms.Button();
@@ -84,20 +83,11 @@ namespace MyStoreManager.Setup
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 9);
+            this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "List/Search";
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::MyStoreManager.Properties.Resources.Logo_PNG2;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(33, 28);
-            this.panel1.TabIndex = 23;
             // 
             // btn_Close
             // 
@@ -140,7 +130,6 @@ namespace MyStoreManager.Setup
             this.ControlBox = false;
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.txt_Search);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_OK);
@@ -164,7 +153,6 @@ namespace MyStoreManager.Setup
         private System.Windows.Forms.Button btn_OK;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Close;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txt_Search;
         private System.Windows.Forms.Button btn_Search;
     }

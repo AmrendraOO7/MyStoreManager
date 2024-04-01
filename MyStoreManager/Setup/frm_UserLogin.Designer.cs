@@ -47,7 +47,7 @@ namespace MyStoreManager.Setup
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::MyStoreManager.Properties.Resources.Login_wallpaper;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -59,7 +59,7 @@ namespace MyStoreManager.Setup
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(3, 3);
@@ -78,16 +78,17 @@ namespace MyStoreManager.Setup
             this.panel2.Controls.Add(this.txtPassword);
             this.panel2.Controls.Add(this.lbl_Password);
             this.panel2.Controls.Add(this.txtUserID);
-            this.panel2.Location = new System.Drawing.Point(117, 239);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1046, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(304, 357);
+            this.panel2.Size = new System.Drawing.Size(304, 729);
             this.panel2.TabIndex = 3;
             // 
             // Btn_Exit
             // 
             this.Btn_Exit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.Btn_Exit.Location = new System.Drawing.Point(34, 287);
+            this.Btn_Exit.Location = new System.Drawing.Point(36, 613);
             this.Btn_Exit.Name = "Btn_Exit";
             this.Btn_Exit.Size = new System.Drawing.Size(83, 34);
             this.Btn_Exit.TabIndex = 3;
@@ -99,7 +100,7 @@ namespace MyStoreManager.Setup
             // 
             this.Btn_Login.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Login.ForeColor = System.Drawing.Color.White;
-            this.Btn_Login.Location = new System.Drawing.Point(186, 287);
+            this.Btn_Login.Location = new System.Drawing.Point(188, 613);
             this.Btn_Login.Name = "Btn_Login";
             this.Btn_Login.Size = new System.Drawing.Size(83, 34);
             this.Btn_Login.TabIndex = 2;
@@ -112,7 +113,7 @@ namespace MyStoreManager.Setup
             this.chk_Btn.AutoSize = true;
             this.chk_Btn.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_Btn.ForeColor = System.Drawing.Color.White;
-            this.chk_Btn.Location = new System.Drawing.Point(140, 247);
+            this.chk_Btn.Location = new System.Drawing.Point(142, 573);
             this.chk_Btn.Name = "chk_Btn";
             this.chk_Btn.Size = new System.Drawing.Size(129, 20);
             this.chk_Btn.TabIndex = 6;
@@ -125,7 +126,7 @@ namespace MyStoreManager.Setup
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(104, 43);
+            this.label1.Location = new System.Drawing.Point(106, 369);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 32);
             this.label1.TabIndex = 0;
@@ -136,7 +137,7 @@ namespace MyStoreManager.Setup
             this.lbl_UserID.AutoSize = true;
             this.lbl_UserID.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UserID.ForeColor = System.Drawing.Color.White;
-            this.lbl_UserID.Location = new System.Drawing.Point(31, 138);
+            this.lbl_UserID.Location = new System.Drawing.Point(33, 464);
             this.lbl_UserID.Name = "lbl_UserID";
             this.lbl_UserID.Size = new System.Drawing.Size(62, 17);
             this.lbl_UserID.TabIndex = 0;
@@ -145,7 +146,7 @@ namespace MyStoreManager.Setup
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(34, 213);
+            this.txtPassword.Location = new System.Drawing.Point(36, 539);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(237, 24);
@@ -158,7 +159,7 @@ namespace MyStoreManager.Setup
             this.lbl_Password.AutoSize = true;
             this.lbl_Password.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password.ForeColor = System.Drawing.Color.White;
-            this.lbl_Password.Location = new System.Drawing.Point(31, 192);
+            this.lbl_Password.Location = new System.Drawing.Point(33, 518);
             this.lbl_Password.Name = "lbl_Password";
             this.lbl_Password.Size = new System.Drawing.Size(84, 17);
             this.lbl_Password.TabIndex = 0;
@@ -167,7 +168,7 @@ namespace MyStoreManager.Setup
             // txtUserID
             // 
             this.txtUserID.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserID.Location = new System.Drawing.Point(34, 159);
+            this.txtUserID.Location = new System.Drawing.Point(36, 485);
             this.txtUserID.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserID.Name = "txtUserID";
             this.txtUserID.Size = new System.Drawing.Size(237, 24);
