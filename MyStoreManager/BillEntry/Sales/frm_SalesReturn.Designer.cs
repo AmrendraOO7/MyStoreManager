@@ -123,7 +123,6 @@
             this.lbl_Person = new System.Windows.Forms.Label();
             this.ProddataGridView = new System.Windows.Forms.DataGridView();
             this.Btn_Ok = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.btn_New = new System.Windows.Forms.Button();
@@ -135,6 +134,7 @@
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpdateProddataGridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProddataGridView)).BeginInit();
@@ -145,6 +145,7 @@
             // panel
             // 
             this.panel.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel.Controls.Add(this.panel3);
             this.panel.Controls.Add(this.btnPrint);
             this.panel.Controls.Add(this.lblAlreadyReturnedAmt);
             this.panel.Controls.Add(this.lblAlreadyReturned);
@@ -235,7 +236,6 @@
             this.panel.Controls.Add(this.lbl_Person);
             this.panel.Controls.Add(this.ProddataGridView);
             this.panel.Controls.Add(this.Btn_Ok);
-            this.panel.Controls.Add(this.panel3);
             this.panel.Controls.Add(this.btn_Delete);
             this.panel.Controls.Add(this.btn_Edit);
             this.panel.Controls.Add(this.btn_New);
@@ -1327,17 +1327,6 @@
             this.Btn_Ok.UseVisualStyleBackColor = false;
             this.Btn_Ok.Click += new System.EventHandler(this.Btn_Ok_Click);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.Logo_PNG;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(963, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(106, 56);
-            this.panel3.TabIndex = 53;
-            // 
             // btn_Delete
             // 
             this.btn_Delete.BackColor = System.Drawing.Color.White;
@@ -1432,6 +1421,17 @@
             this.printPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog.Icon")));
             this.printPreviewDialog.Name = "printPreviewDialog";
             this.printPreviewDialog.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo1;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(970, 9);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(106, 56);
+            this.panel3.TabIndex = 904;
             // 
             // frm_SalesReturn
             // 
@@ -1536,7 +1536,6 @@
         private System.Windows.Forms.Label lbl_Person;
         private System.Windows.Forms.DataGridView ProddataGridView;
         private System.Windows.Forms.Button Btn_Ok;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Button btn_New;
@@ -1565,5 +1564,6 @@
         private System.Windows.Forms.Button btnPrint;
         private System.Drawing.Printing.PrintDocument printDocument;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
+        private System.Windows.Forms.Panel panel3;
     }
 }

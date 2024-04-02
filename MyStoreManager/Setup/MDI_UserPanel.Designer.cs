@@ -480,6 +480,7 @@ namespace MyStoreManager.Setup
             this.godownToolStripMenuItem.Name = "godownToolStripMenuItem";
             this.godownToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.godownToolStripMenuItem.Text = "Godown";
+            this.godownToolStripMenuItem.Visible = false;
             this.godownToolStripMenuItem.Click += new System.EventHandler(this.godownToolStripMenuItem_Click);
             // 
             // entryToolStripMenuItem
@@ -498,7 +499,7 @@ namespace MyStoreManager.Setup
             this.purcahseGoodsToolStripMenuItem,
             this.purchaseReturnToolStripMenuItem});
             this.purchaseEntryToolStripMenuItem.Name = "purchaseEntryToolStripMenuItem";
-            this.purchaseEntryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.purchaseEntryToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.purchaseEntryToolStripMenuItem.Text = "Purchase";
             // 
             // purchaseOrderToolStripMenuItem
@@ -533,7 +534,7 @@ namespace MyStoreManager.Setup
             this.salesEntryPOSToolStripMenuItem,
             this.salesReturnToolStripMenuItem1});
             this.salesEntryToolStripMenuItem.Name = "salesEntryToolStripMenuItem";
-            this.salesEntryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salesEntryToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.salesEntryToolStripMenuItem.Text = "Sales";
             // 
             // salesEntryPOSToolStripMenuItem

@@ -43,7 +43,6 @@
             this.btn_New = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.Btn_Ok = new System.Windows.Forms.Button();
             this.ProddataGridView = new System.Windows.Forms.DataGridView();
             this.lbl_Person = new System.Windows.Forms.Label();
@@ -127,6 +126,7 @@
             this.btnPrint = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
             this.txtProductName = new MyStoreManager.customTools.TextBoxChangedDelay();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.contextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProddataGridView)).BeginInit();
@@ -228,17 +228,6 @@
             this.btn_Delete.Text = "&Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.Logo_PNG;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(963, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(106, 56);
-            this.panel3.TabIndex = 53;
             // 
             // Btn_Ok
             // 
@@ -1225,6 +1214,7 @@
             // panel
             // 
             this.panel.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel.Controls.Add(this.panel3);
             this.panel.Controls.Add(this.btnPrint);
             this.panel.Controls.Add(this.txtProductName);
             this.panel.Controls.Add(this.btnHoldBill);
@@ -1307,7 +1297,6 @@
             this.panel.Controls.Add(this.lbl_Person);
             this.panel.Controls.Add(this.ProddataGridView);
             this.panel.Controls.Add(this.Btn_Ok);
-            this.panel.Controls.Add(this.panel3);
             this.panel.Controls.Add(this.btn_Delete);
             this.panel.Controls.Add(this.btn_Edit);
             this.panel.Controls.Add(this.btn_New);
@@ -1331,6 +1320,17 @@
             this.txtProductName.TextBoxChangedDelayed += new System.EventHandler(this.txtProductName_TextBoxChangedDelayed);
             this.txtProductName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProductName_KeyDown);
             this.txtProductName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.globalTab_KeyPress);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo1;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(976, 7);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(106, 56);
+            this.panel3.TabIndex = 894;
             // 
             // frm_sales_Entry
             // 
@@ -1450,9 +1450,9 @@
         private System.Windows.Forms.Label lbl_Person;
         private System.Windows.Forms.DataGridView ProddataGridView;
         private System.Windows.Forms.Button Btn_Ok;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Button btn_New;
+        private System.Windows.Forms.Panel panel3;
     }
 }

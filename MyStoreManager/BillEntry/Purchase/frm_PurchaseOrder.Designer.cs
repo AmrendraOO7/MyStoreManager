@@ -66,9 +66,11 @@ namespace MyStoreManager.BillEntry.Purchase
             this.label1 = new System.Windows.Forms.Label();
             this.lblTotalAmount = new System.Windows.Forms.Label();
             this.txtUnit = new System.Windows.Forms.TextBox();
+            this.btn_ProductClear = new System.Windows.Forms.Button();
             this.ShortName = new System.Windows.Forms.Label();
             this.lblPShortname = new System.Windows.Forms.Label();
             this.txtDateTime = new System.Windows.Forms.DateTimePicker();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.lbl_TagStatus = new System.Windows.Forms.Label();
             this.ProductIDLabel = new System.Windows.Forms.Label();
             this.lbl_Barcode = new System.Windows.Forms.Label();
@@ -80,6 +82,7 @@ namespace MyStoreManager.BillEntry.Purchase
             this.lbl_Person = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.Btn_CustoSearch = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -96,6 +99,7 @@ namespace MyStoreManager.BillEntry.Purchase
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Quantity = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btn_Product_Search = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_Name = new System.Windows.Forms.TextBox();
             this.txtPContactnum = new System.Windows.Forms.TextBox();
@@ -112,10 +116,6 @@ namespace MyStoreManager.BillEntry.Purchase
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
-            this.btn_ProductClear = new System.Windows.Forms.Button();
-            this.btn_Refresh = new System.Windows.Forms.Button();
-            this.Btn_CustoSearch = new System.Windows.Forms.Button();
-            this.btn_Product_Search = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
@@ -127,6 +127,7 @@ namespace MyStoreManager.BillEntry.Purchase
             // 
             this.panel.BackColor = System.Drawing.Color.BlueViolet;
             this.panel.ContextMenuStrip = this.contextMenuStrip;
+            this.panel.Controls.Add(this.panel3);
             this.panel.Controls.Add(this.btnPrint);
             this.panel.Controls.Add(this.label22);
             this.panel.Controls.Add(this.label14);
@@ -199,7 +200,6 @@ namespace MyStoreManager.BillEntry.Purchase
             this.panel.Controls.Add(this.label3);
             this.panel.Controls.Add(this.Btn_Insert);
             this.panel.Controls.Add(this.Btn_Ok);
-            this.panel.Controls.Add(this.panel3);
             this.panel.Controls.Add(this.btn_Delete);
             this.panel.Controls.Add(this.btn_Edit);
             this.panel.Controls.Add(this.btn_Save);
@@ -602,6 +602,18 @@ namespace MyStoreManager.BillEntry.Purchase
             this.txtUnit.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUnit_KeyDown);
             this.txtUnit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUnit_KeyPress);
             // 
+            // btn_ProductClear
+            // 
+            this.btn_ProductClear.BackgroundImage = global::MyStoreManager.Properties.Resources.Redo;
+            this.btn_ProductClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ProductClear.Location = new System.Drawing.Point(1027, 214);
+            this.btn_ProductClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_ProductClear.Name = "btn_ProductClear";
+            this.btn_ProductClear.Size = new System.Drawing.Size(25, 24);
+            this.btn_ProductClear.TabIndex = 801;
+            this.btn_ProductClear.UseVisualStyleBackColor = true;
+            this.btn_ProductClear.Click += new System.EventHandler(this.btn_ProductClear_Click);
+            // 
             // ShortName
             // 
             this.ShortName.AutoSize = true;
@@ -634,6 +646,18 @@ namespace MyStoreManager.BillEntry.Purchase
             this.txtDateTime.TabIndex = 2;
             this.txtDateTime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.globalTab_KeyPress);
             this.txtDateTime.Leave += new System.EventHandler(this.txtDateTime_Leave);
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackgroundImage = global::MyStoreManager.Properties.Resources.Refresh;
+            this.btn_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Refresh.Location = new System.Drawing.Point(308, 499);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(23, 20);
+            this.btn_Refresh.TabIndex = 115;
+            this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Visible = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // lbl_TagStatus
             // 
@@ -763,6 +787,18 @@ namespace MyStoreManager.BillEntry.Purchase
             this.label8.Size = new System.Drawing.Size(63, 13);
             this.label8.TabIndex = 95;
             this.label8.Text = "B-Code:-";
+            // 
+            // Btn_CustoSearch
+            // 
+            this.Btn_CustoSearch.BackgroundImage = global::MyStoreManager.Properties.Resources.Zoom;
+            this.Btn_CustoSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_CustoSearch.Location = new System.Drawing.Point(539, 132);
+            this.Btn_CustoSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_CustoSearch.Name = "Btn_CustoSearch";
+            this.Btn_CustoSearch.Size = new System.Drawing.Size(22, 19);
+            this.Btn_CustoSearch.TabIndex = 93;
+            this.Btn_CustoSearch.UseVisualStyleBackColor = true;
+            this.Btn_CustoSearch.Click += new System.EventHandler(this.Btn_CustoSearch_Click);
             // 
             // label18
             // 
@@ -963,6 +999,18 @@ namespace MyStoreManager.BillEntry.Purchase
             this.label5.TabIndex = 69;
             this.label5.Text = "Unit";
             // 
+            // btn_Product_Search
+            // 
+            this.btn_Product_Search.BackgroundImage = global::MyStoreManager.Properties.Resources.Zoom;
+            this.btn_Product_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Product_Search.Location = new System.Drawing.Point(443, 217);
+            this.btn_Product_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Product_Search.Name = "btn_Product_Search";
+            this.btn_Product_Search.Size = new System.Drawing.Size(22, 21);
+            this.btn_Product_Search.TabIndex = 67;
+            this.btn_Product_Search.UseVisualStyleBackColor = true;
+            this.btn_Product_Search.Click += new System.EventHandler(this.btn_Product_Search_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1139,64 +1187,16 @@ namespace MyStoreManager.BillEntry.Purchase
             this.printPreviewDialog.Name = "printPreviewDialog";
             this.printPreviewDialog.Visible = false;
             // 
-            // btn_ProductClear
-            // 
-            this.btn_ProductClear.BackgroundImage = global::MyStoreManager.Properties.Resources.Redo;
-            this.btn_ProductClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_ProductClear.Location = new System.Drawing.Point(1027, 214);
-            this.btn_ProductClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_ProductClear.Name = "btn_ProductClear";
-            this.btn_ProductClear.Size = new System.Drawing.Size(25, 24);
-            this.btn_ProductClear.TabIndex = 801;
-            this.btn_ProductClear.UseVisualStyleBackColor = true;
-            this.btn_ProductClear.Click += new System.EventHandler(this.btn_ProductClear_Click);
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.BackgroundImage = global::MyStoreManager.Properties.Resources.Refresh;
-            this.btn_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Refresh.Location = new System.Drawing.Point(308, 499);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(23, 20);
-            this.btn_Refresh.TabIndex = 115;
-            this.btn_Refresh.UseVisualStyleBackColor = true;
-            this.btn_Refresh.Visible = false;
-            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
-            // 
-            // Btn_CustoSearch
-            // 
-            this.Btn_CustoSearch.BackgroundImage = global::MyStoreManager.Properties.Resources.Zoom;
-            this.Btn_CustoSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_CustoSearch.Location = new System.Drawing.Point(539, 132);
-            this.Btn_CustoSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Btn_CustoSearch.Name = "Btn_CustoSearch";
-            this.Btn_CustoSearch.Size = new System.Drawing.Size(22, 19);
-            this.Btn_CustoSearch.TabIndex = 93;
-            this.Btn_CustoSearch.UseVisualStyleBackColor = true;
-            this.Btn_CustoSearch.Click += new System.EventHandler(this.Btn_CustoSearch_Click);
-            // 
-            // btn_Product_Search
-            // 
-            this.btn_Product_Search.BackgroundImage = global::MyStoreManager.Properties.Resources.Zoom;
-            this.btn_Product_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Product_Search.Location = new System.Drawing.Point(443, 217);
-            this.btn_Product_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Product_Search.Name = "btn_Product_Search";
-            this.btn_Product_Search.Size = new System.Drawing.Size(22, 21);
-            this.btn_Product_Search.TabIndex = 67;
-            this.btn_Product_Search.UseVisualStyleBackColor = true;
-            this.btn_Product_Search.Click += new System.EventHandler(this.btn_Product_Search_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.Logo_PNG;
+            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo1;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(943, 2);
+            this.panel3.Location = new System.Drawing.Point(952, 5);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(106, 56);
-            this.panel3.TabIndex = 53;
+            this.panel3.TabIndex = 882;
             // 
             // frm_PurchaseOrder
             // 
@@ -1228,7 +1228,6 @@ namespace MyStoreManager.BillEntry.Purchase
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Button btn_Save;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Btn_Ok;
         private System.Windows.Forms.TextBox txtPContactnum;
         private System.Windows.Forms.TextBox txtPaddress;
@@ -1309,5 +1308,6 @@ namespace MyStoreManager.BillEntry.Purchase
         private System.Drawing.Printing.PrintDocument printDocument;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
         private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Panel panel3;
     }
 }
