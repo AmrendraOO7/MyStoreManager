@@ -50,7 +50,7 @@ namespace MyStoreManager.Setup
         {
             if(!string.IsNullOrEmpty(txtUserID.Text) && !string.IsNullOrEmpty(txtPassword.Text))
             {
-                PleaseWait.Show();
+                //PleaseWait.Show();
                 username = txtUserID.Text.Trim();
                 Password = txtPassword.Text.Trim();
                 MDI_Action = MDI_UserPanel.MDI_Action;
@@ -69,13 +69,13 @@ namespace MyStoreManager.Setup
                                 if (username == Entered_username && Password == Entered_Password && RoleID == 1 && Global.CurrentSession == 0)
                                 {
                                     Global.CurrentSession = 1;
-                                    PleaseWait.Close();
+                                    //PleaseWait.Close();
                                     MessageBox.Show("You have Admin Permission For this Session", "Session Admin OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     this.Close();
                                 }
                                 else
                                 {
-                                    PleaseWait.Close();
+                                    //PleaseWait.Close();
                                     MessageBox.Show("Entered Information doesnot matched..!!", "TryAgain", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     txtPassword.Focus();
                                 }
@@ -91,7 +91,7 @@ namespace MyStoreManager.Setup
                                 }
                                 else
                                 {
-                                    PleaseWait.Close();
+                                    //PleaseWait.Close();
                                     MessageBox.Show("Entered Information doesnot matched..!!", "TryAgain", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                     txtPassword.Focus();
                                 }
@@ -101,14 +101,14 @@ namespace MyStoreManager.Setup
                 }
                 else
                 {
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     MessageBox.Show("Entered Information doesnot matched..!!", "TryAgain", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtPassword.Focus();
                 }
             }
             else
             {
-                PleaseWait.Close();
+                //PleaseWait.Close();
             }
         }
 

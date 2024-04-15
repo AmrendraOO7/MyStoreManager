@@ -71,6 +71,8 @@ namespace MyStoreManager.Setup
             FullScreen();
             Global.IsFormActive = IsFormActive = 1;
             StatusStripLoad();
+            if (Global.isProductionPurchase == false) productionUnitToolStripMenuItem.Visible = false;
+            else productionUnitToolStripMenuItem.Visible = true;
         }
         private void MDI_UserPanel_FormClosed(object sender, FormClosedEventArgs e)
         {

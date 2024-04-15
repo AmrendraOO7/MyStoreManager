@@ -47,6 +47,7 @@ namespace MyStoreManager.PreEntry
             this.btn_Save = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
             this.panel.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +56,7 @@ namespace MyStoreManager.PreEntry
             // 
             this.panel.BackColor = System.Drawing.Color.BlueViolet;
             this.panel.ContextMenuStrip = this.contextMenuStrip;
+            this.panel.Controls.Add(this.btnView);
             this.panel.Controls.Add(this.txtCategoryCode);
             this.panel.Controls.Add(this.label2);
             this.panel.Controls.Add(this.btn_Refresh);
@@ -192,7 +194,7 @@ namespace MyStoreManager.PreEntry
             this.btn_Delete.BackColor = System.Drawing.Color.White;
             this.btn_Delete.Font = new System.Drawing.Font("Verdana", 8F);
             this.btn_Delete.ForeColor = System.Drawing.Color.Indigo;
-            this.btn_Delete.Location = new System.Drawing.Point(319, 51);
+            this.btn_Delete.Location = new System.Drawing.Point(314, 51);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(79, 29);
             this.btn_Delete.TabIndex = 5;
@@ -205,7 +207,7 @@ namespace MyStoreManager.PreEntry
             this.btn_Edit.BackColor = System.Drawing.Color.White;
             this.btn_Edit.Font = new System.Drawing.Font("Verdana", 8F);
             this.btn_Edit.ForeColor = System.Drawing.Color.Indigo;
-            this.btn_Edit.Location = new System.Drawing.Point(242, 51);
+            this.btn_Edit.Location = new System.Drawing.Point(235, 51);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(79, 29);
             this.btn_Edit.TabIndex = 4;
@@ -218,7 +220,7 @@ namespace MyStoreManager.PreEntry
             this.btn_Save.BackColor = System.Drawing.Color.White;
             this.btn_Save.Font = new System.Drawing.Font("Verdana", 8F);
             this.btn_Save.ForeColor = System.Drawing.Color.Indigo;
-            this.btn_Save.Location = new System.Drawing.Point(165, 51);
+            this.btn_Save.Location = new System.Drawing.Point(156, 51);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(79, 29);
             this.btn_Save.TabIndex = 0;
@@ -247,6 +249,19 @@ namespace MyStoreManager.PreEntry
             this.label3.Size = new System.Drawing.Size(105, 14);
             this.label3.TabIndex = 44;
             this.label3.Text = "Product Type:-";
+            // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.White;
+            this.btnView.Font = new System.Drawing.Font("Verdana", 8F);
+            this.btnView.ForeColor = System.Drawing.Color.Indigo;
+            this.btnView.Location = new System.Drawing.Point(3, 51);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(79, 29);
+            this.btnView.TabIndex = 64;
+            this.btnView.Text = "&View";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // frm_ProductTypes
             // 
@@ -289,5 +304,6 @@ namespace MyStoreManager.PreEntry
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.TextBox txtCategoryCode;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnView;
     }
 }

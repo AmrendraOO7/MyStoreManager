@@ -30,6 +30,7 @@ namespace MSMControl.Connection
         public static bool printMessage;
         public static bool autoPrint;
         public static int compType;
+        public static bool isProductionPurchase;
         //public static System.Drawing.Color BackgroundColor;
 
         public static string CompanyName;

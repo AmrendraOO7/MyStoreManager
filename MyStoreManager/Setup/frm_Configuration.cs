@@ -23,7 +23,7 @@ namespace MyStoreManager.Setup
         public string Year = string.Empty;
         public string AdminValue = string.Empty;
         public string ToPerform = string.Empty;
-        public string IsAdmin=string.Empty;
+        public string IsAdmin = string.Empty;
         public int ColorID = 0;
         //public string BkGroundColor = string.Empty;
 
@@ -36,12 +36,12 @@ namespace MyStoreManager.Setup
             InitializeComponent();
             ConfigInitials();
         }
-        
+
 
         public void ConfigInitials()
         {
             var Configdt = mainMaster.checkConfig();
-            var Backgrounddt = mainMaster.getUserLogin(Global.LoginUser, string.Empty,1);
+            var Backgrounddt = mainMaster.getUserLogin(Global.LoginUser, string.Empty, 1);
             if (Configdt.Rows.Count == 1)
             {
                 ToPerform = "Update";
@@ -49,13 +49,13 @@ namespace MyStoreManager.Setup
                 //configuration part
                 CID = Int32.Parse(Configdt.Rows[0]["CID"].ToString());
                 YearId = Int32.Parse(Configdt.Rows[0]["YearID"].ToString());
-                cmb_FiscalYear.Text= Year = Configdt.Rows[0]["CurrentYear"].ToString();
+                cmb_FiscalYear.Text = Year = Configdt.Rows[0]["CurrentYear"].ToString();
                 var VATstring = Configdt.Rows[0]["VAT"].ToString();
                 var VAT = VATstring == "" ? decimal.Parse("0") : decimal.Parse(VATstring);
                 txtVAT.Text = VAT == 0 ? "0.00" : VAT.ToString("##.##########");
 
                 var DISstring = Configdt.Rows[0]["Discount"].ToString();
-                var Discount = DISstring==""? decimal.Parse("0"): decimal.Parse(DISstring);
+                var Discount = DISstring == "" ? decimal.Parse("0") : decimal.Parse(DISstring);
                 txtDiscount.Text = Discount == 0 ? "0.00" : Discount.ToString("##.##########");
 
                 chk_DateTime_Check.Checked = Convert.ToBoolean(Configdt.Rows[0]["checkDate"]);
@@ -69,12 +69,14 @@ namespace MyStoreManager.Setup
                 txtBillMsg.Text = Configdt.Rows[0]["billMsg"].ToString();
                 //User part
                 var Background = mainMaster.getUserLogin(Global.LoginUser, string.Empty, 1);
-                if (Backgrounddt.Rows.Count>0)
+                if (Backgrounddt.Rows.Count > 0)
                 {
                     chk_IsAdmin.Checked = Convert.ToBoolean(Background.Rows[0]["IsAdmin"]);
                     ColorID = Int32.Parse(Background.Rows[0]["ColorID"].ToString());
                     cmb_Color.Text = Background.Rows[0]["Background"].ToString();
                 }
+
+                chkProduction.Checked = Global.isProductionPurchase;
             }
             else if (Configdt.Rows.Count == 0 || Configdt.Rows.Count > 0)
             {
@@ -85,7 +87,7 @@ namespace MyStoreManager.Setup
         {
             cmb_FiscalYear.DataSource = mainMaster.Get_FiscalYear();
             cmb_FiscalYear.ValueMember = "YearDesc";
-            if (cmb_FiscalYear.Items.Count > 0) cmb_FiscalYear.SelectedIndex = YearId - 1 ;
+            if (cmb_FiscalYear.Items.Count > 0) cmb_FiscalYear.SelectedIndex = YearId - 1;
         }
 
         private void BackgroundColor()
@@ -119,7 +121,7 @@ namespace MyStoreManager.Setup
         }
         public void FormStatus(bool txt)
         {
-            cmb_FiscalYear.Enabled = Btn_Ok.Enabled= chk_IsAdmin.Enabled = txt;
+            cmb_FiscalYear.Enabled = Btn_Ok.Enabled = chk_IsAdmin.Enabled = txt;
         }
 
         private void frm_Configuration_Load(object sender, EventArgs e)
@@ -152,12 +154,13 @@ namespace MyStoreManager.Setup
                 return false;
             }
 
-            if(YearId != Global.YearID)
+            if (YearId != Global.YearID)
             {
                 MessageBox.Show("Current year id cannot be changed.. Contact System Admin", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cmb_FiscalYear.Focus();
                 return false;
             }
+            
             else return true;
         }
 
@@ -171,8 +174,8 @@ namespace MyStoreManager.Setup
             mainMaster.Config.IsAdmin = chk_IsAdmin.Checked;
             mainMaster.Config.ColorID = cmb_Color.SelectedIndex;       //These values are being saved in User master
             mainMaster.Config.Background = cmb_Color.Text;              //These values are being saved in User master
-            mainMaster.Config.VAT = !string.IsNullOrEmpty(txtVAT.Text) ?  decimal.Parse(txtVAT.Text.Trim().Replace("'", "''")) : decimal.Parse("0.00");
-            mainMaster.Config.Discount = !string.IsNullOrEmpty(txtDiscount.Text) ? decimal.Parse(txtDiscount.Text.Trim().Replace("'", "''")) : decimal.Parse("0.00") ;
+            mainMaster.Config.VAT = !string.IsNullOrEmpty(txtVAT.Text) ? decimal.Parse(txtVAT.Text.Trim().Replace("'", "''")) : decimal.Parse("0.00");
+            mainMaster.Config.Discount = !string.IsNullOrEmpty(txtDiscount.Text) ? decimal.Parse(txtDiscount.Text.Trim().Replace("'", "''")) : decimal.Parse("0.00");
             mainMaster.Config.checkDate = chk_DateTime_Check.Checked;
             mainMaster.Config.notes = chkNotes.Checked;
             mainMaster.Config.returnNotes = chkReturnNotes.Checked;
@@ -180,7 +183,7 @@ namespace MyStoreManager.Setup
             mainMaster.Config.autoPrint = chkAutoPrint.Checked;
             mainMaster.Config.compType = cmbCompType.SelectedIndex;
             mainMaster.Config.billMsg = txtBillMsg.Text.Trim().Replace("'", "''");
-            return await Task.Run(()=> mainMaster.ConfigurationSetup()) ;             
+            return await Task.Run(() => mainMaster.ConfigurationSetup());
         }
 
         private void updateGlobal()
@@ -194,16 +197,16 @@ namespace MyStoreManager.Setup
             Global.autoPrint = Convert.ToBoolean(initials.Rows[0]["autoPrint"]);
         }
 
-       
+
         private async void Btn_Ok_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(ToPerform)) return;
             var dt = mainMaster.GetID("YearID", "FiscalYear", "YearDesc", $@"{cmb_FiscalYear.Text}");
             YearId = Int32.Parse(dt.Rows[0]["YearID"].ToString());
-            if(FormIsOK())
+            if (FormIsOK())
             {
-                PleaseWait.Show();
-                if (await ConfigurationSetup()!=0)
+                //PleaseWait.Show();
+                if (await ConfigurationSetup() != 0)
                 {
                     FormStatus(true);
                     CbmLoad();
@@ -217,7 +220,7 @@ namespace MyStoreManager.Setup
                 }
                 else
                 {
-                    PleaseWait.Close();
+                    //PleaseWait.Close();
                     MessageBox.Show($@"Configuration {ToPerform} Failed, Contact Support...!!.", "Error..!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     cmb_FiscalYear.Focus();
                 }
@@ -237,7 +240,13 @@ namespace MyStoreManager.Setup
 
         private void chkAutoPrint_CheckedChanged(object sender, EventArgs e)
         {
-            if(chkAutoPrint.Checked) chkPrintMessage.Checked = false;
+            if (chkAutoPrint.Checked) chkPrintMessage.Checked = false;
+        }
+
+        private void chkProduction_CheckedChanged(object sender, EventArgs e)
+        {
+          if(Global.isProductionPurchase == false)MessageBox.Show("If You want to make purchase unit purchase. Contact support\n Thank you.", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //enable / desiable production from database manually, in config table
         }
     }
 }

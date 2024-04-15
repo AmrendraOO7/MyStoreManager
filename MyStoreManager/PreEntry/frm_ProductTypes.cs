@@ -238,5 +238,13 @@ namespace MyStoreManager.PreEntry
                 btn_Search.PerformClick();
             }
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            ToPerform = "Update";
+            var popup = new frm_PopUpSearch(TypeID, UserTable, DbName, "GetCategory", 0, string.Empty, 0);
+            if (frm_PopUpSearch.dt.Rows.Count > 0) popup.ShowDialog();
+            else MessageBox.Show("No Data..!!", "Stop..!!", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+        }
     }
 }

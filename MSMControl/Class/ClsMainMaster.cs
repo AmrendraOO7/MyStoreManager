@@ -2142,7 +2142,7 @@ namespace MSMControl.Class
 
         public DataTable checkConfig()
         {
-            var Query = @"select CID,YearID,Current_Year CurrentYear,IsAdmin,ColorID,Background,VAT,Discount,checkDate,notes,returnNotes,printMessage,autoPrint,compType,billMsg from [MSM].[Configuration];";
+            var Query = @"select CID,YearID,Current_Year CurrentYear,IsAdmin,ColorID,Background,VAT,Discount,checkDate,notes,returnNotes,printMessage,autoPrint,compType,billMsg,isProduction from [MSM].[Configuration];";
             return Execute.ExecuteDataSetOnMain(Connection.Connection.ConnectionMain, CommandType.Text, Query).Tables[0];
         }
 

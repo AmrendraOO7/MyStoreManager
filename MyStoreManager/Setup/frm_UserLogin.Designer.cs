@@ -30,20 +30,30 @@ namespace MyStoreManager.Setup
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_UserLogin));
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Btn_Exit = new System.Windows.Forms.Button();
-            this.Btn_Login = new System.Windows.Forms.Button();
-            this.chk_Btn = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_UserID = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.lbl_Password = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.txtUserID = new System.Windows.Forms.TextBox();
+            this.lbl_Password = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lbl_UserID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.chk_Btn = new System.Windows.Forms.CheckBox();
+            this.Btn_Login = new System.Windows.Forms.Button();
+            this.Btn_Exit = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.TabIndex = 4;
             // 
             // panel1
             // 
@@ -57,15 +67,96 @@ namespace MyStoreManager.Setup
             this.panel1.Size = new System.Drawing.Size(1350, 729);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
+            // txtUserID
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 100);
-            this.panel3.TabIndex = 4;
+            this.txtUserID.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserID.Location = new System.Drawing.Point(36, 485);
+            this.txtUserID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(237, 24);
+            this.txtUserID.TabIndex = 0;
+            this.txtUserID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.globalTab_KeyPress);
+            // 
+            // lbl_Password
+            // 
+            this.lbl_Password.AutoSize = true;
+            this.lbl_Password.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Password.ForeColor = System.Drawing.Color.White;
+            this.lbl_Password.Location = new System.Drawing.Point(33, 518);
+            this.lbl_Password.Name = "lbl_Password";
+            this.lbl_Password.Size = new System.Drawing.Size(84, 17);
+            this.lbl_Password.TabIndex = 0;
+            this.lbl_Password.Text = "Password";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(36, 539);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(237, 24);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.globalTab_KeyPress);
+            // 
+            // lbl_UserID
+            // 
+            this.lbl_UserID.AutoSize = true;
+            this.lbl_UserID.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UserID.ForeColor = System.Drawing.Color.White;
+            this.lbl_UserID.Location = new System.Drawing.Point(33, 464);
+            this.lbl_UserID.Name = "lbl_UserID";
+            this.lbl_UserID.Size = new System.Drawing.Size(62, 17);
+            this.lbl_UserID.TabIndex = 0;
+            this.lbl_UserID.Text = "UserID";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(106, 369);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Login";
+            // 
+            // chk_Btn
+            // 
+            this.chk_Btn.AutoSize = true;
+            this.chk_Btn.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_Btn.ForeColor = System.Drawing.Color.White;
+            this.chk_Btn.Location = new System.Drawing.Point(142, 573);
+            this.chk_Btn.Name = "chk_Btn";
+            this.chk_Btn.Size = new System.Drawing.Size(129, 20);
+            this.chk_Btn.TabIndex = 6;
+            this.chk_Btn.Text = "Show Password";
+            this.chk_Btn.UseVisualStyleBackColor = true;
+            this.chk_Btn.CheckedChanged += new System.EventHandler(this.chk_Btn_CheckedChanged);
+            // 
+            // Btn_Login
+            // 
+            this.Btn_Login.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Login.ForeColor = System.Drawing.Color.White;
+            this.Btn_Login.Location = new System.Drawing.Point(188, 613);
+            this.Btn_Login.Name = "Btn_Login";
+            this.Btn_Login.Size = new System.Drawing.Size(83, 34);
+            this.Btn_Login.TabIndex = 2;
+            this.Btn_Login.Text = "&Login";
+            this.Btn_Login.UseVisualStyleBackColor = true;
+            this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
+            // 
+            // Btn_Exit
+            // 
+            this.Btn_Exit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.Btn_Exit.Location = new System.Drawing.Point(36, 613);
+            this.Btn_Exit.Name = "Btn_Exit";
+            this.Btn_Exit.Size = new System.Drawing.Size(83, 34);
+            this.Btn_Exit.TabIndex = 3;
+            this.Btn_Exit.Text = "&Exit";
+            this.Btn_Exit.UseVisualStyleBackColor = true;
+            this.Btn_Exit.Click += new System.EventHandler(this.Btn_Exit_Click);
             // 
             // panel2
             // 
@@ -83,97 +174,6 @@ namespace MyStoreManager.Setup
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(304, 729);
             this.panel2.TabIndex = 3;
-            // 
-            // Btn_Exit
-            // 
-            this.Btn_Exit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.Btn_Exit.Location = new System.Drawing.Point(36, 613);
-            this.Btn_Exit.Name = "Btn_Exit";
-            this.Btn_Exit.Size = new System.Drawing.Size(83, 34);
-            this.Btn_Exit.TabIndex = 3;
-            this.Btn_Exit.Text = "&Exit";
-            this.Btn_Exit.UseVisualStyleBackColor = true;
-            this.Btn_Exit.Click += new System.EventHandler(this.Btn_Exit_Click);
-            // 
-            // Btn_Login
-            // 
-            this.Btn_Login.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Login.ForeColor = System.Drawing.Color.White;
-            this.Btn_Login.Location = new System.Drawing.Point(188, 613);
-            this.Btn_Login.Name = "Btn_Login";
-            this.Btn_Login.Size = new System.Drawing.Size(83, 34);
-            this.Btn_Login.TabIndex = 2;
-            this.Btn_Login.Text = "&Login";
-            this.Btn_Login.UseVisualStyleBackColor = true;
-            this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
-            // 
-            // chk_Btn
-            // 
-            this.chk_Btn.AutoSize = true;
-            this.chk_Btn.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Btn.ForeColor = System.Drawing.Color.White;
-            this.chk_Btn.Location = new System.Drawing.Point(142, 573);
-            this.chk_Btn.Name = "chk_Btn";
-            this.chk_Btn.Size = new System.Drawing.Size(129, 20);
-            this.chk_Btn.TabIndex = 6;
-            this.chk_Btn.Text = "Show Password";
-            this.chk_Btn.UseVisualStyleBackColor = true;
-            this.chk_Btn.CheckedChanged += new System.EventHandler(this.chk_Btn_CheckedChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(106, 369);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
-            // 
-            // lbl_UserID
-            // 
-            this.lbl_UserID.AutoSize = true;
-            this.lbl_UserID.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_UserID.ForeColor = System.Drawing.Color.White;
-            this.lbl_UserID.Location = new System.Drawing.Point(33, 464);
-            this.lbl_UserID.Name = "lbl_UserID";
-            this.lbl_UserID.Size = new System.Drawing.Size(62, 17);
-            this.lbl_UserID.TabIndex = 0;
-            this.lbl_UserID.Text = "UserID";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(36, 539);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(237, 24);
-            this.txtPassword.TabIndex = 1;
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.globalTab_KeyPress);
-            // 
-            // lbl_Password
-            // 
-            this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Password.ForeColor = System.Drawing.Color.White;
-            this.lbl_Password.Location = new System.Drawing.Point(33, 518);
-            this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(84, 17);
-            this.lbl_Password.TabIndex = 0;
-            this.lbl_Password.Text = "Password";
-            // 
-            // txtUserID
-            // 
-            this.txtUserID.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserID.Location = new System.Drawing.Point(36, 485);
-            this.txtUserID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUserID.Name = "txtUserID";
-            this.txtUserID.Size = new System.Drawing.Size(237, 24);
-            this.txtUserID.TabIndex = 0;
-            this.txtUserID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.globalTab_KeyPress);
             // 
             // frm_UserLogin
             // 
@@ -197,16 +197,16 @@ namespace MyStoreManager.Setup
 
         #endregion
 
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button Btn_Exit;
+        private System.Windows.Forms.Button Btn_Login;
+        private System.Windows.Forms.CheckBox chk_Btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_UserID;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.TextBox txtUserID;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox chk_Btn;
-        private System.Windows.Forms.Button Btn_Exit;
-        private System.Windows.Forms.Button Btn_Login;
     }
 }

@@ -54,7 +54,6 @@
             this.lbl_Phone = new System.Windows.Forms.Label();
             this.lbl_Address = new System.Windows.Forms.Label();
             this.lbl_CompanyName = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_Person = new System.Windows.Forms.Label();
             this.lbl_RoleName = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewInventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProddataGridView)).BeginInit();
             this.panel4.SuspendLayout();
@@ -278,11 +278,11 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.lbl_Phone);
             this.panel2.Controls.Add(this.lbl_Address);
             this.panel2.Controls.Add(this.lbl_CompanyName);
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -337,17 +337,6 @@
             this.lbl_CompanyName.TabIndex = 880;
             this.lbl_CompanyName.Text = "Company name";
             this.lbl_CompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.Logo_PNG;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(1180, 11);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(106, 56);
-            this.panel3.TabIndex = 877;
             // 
             // panel1
             // 
@@ -418,6 +407,17 @@
             this.viewInventoryToolStripMenuItem.Text = "View Inventory";
             this.viewInventoryToolStripMenuItem.Click += new System.EventHandler(this.viewInventoryToolStripMenuItem_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::MyStoreManager.Properties.Resources.MyStoreManager_logo1;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(1180, 11);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(106, 56);
+            this.panel3.TabIndex = 882;
+            // 
             // frm_BulkReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,7 +465,6 @@
         private System.Windows.Forms.Label lbl_Phone;
         private System.Windows.Forms.Label lbl_Address;
         private System.Windows.Forms.Label lbl_CompanyName;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_Person;
         private System.Windows.Forms.Label lbl_RoleName;
@@ -473,5 +472,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewInventoryToolStripMenuItem;
+        private System.Windows.Forms.Panel panel3;
     }
 }

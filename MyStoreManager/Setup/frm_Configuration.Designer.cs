@@ -54,12 +54,14 @@ namespace MyStoreManager.Setup
             this.label1 = new System.Windows.Forms.Label();
             this.Btn_Ok = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.chkProduction = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel1.Controls.Add(this.chkProduction);
             this.panel1.Controls.Add(this.cmbCompType);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtBillMsg);
@@ -358,6 +360,20 @@ namespace MyStoreManager.Setup
             this.label9.TabIndex = 38;
             this.label9.Text = "FiscalYear:-";
             // 
+            // chkProduction
+            // 
+            this.chkProduction.AutoSize = true;
+            this.chkProduction.BackColor = System.Drawing.Color.Transparent;
+            this.chkProduction.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
+            this.chkProduction.ForeColor = System.Drawing.Color.GhostWhite;
+            this.chkProduction.Location = new System.Drawing.Point(258, 201);
+            this.chkProduction.Name = "chkProduction";
+            this.chkProduction.Size = new System.Drawing.Size(97, 18);
+            this.chkProduction.TabIndex = 65;
+            this.chkProduction.Text = "Production";
+            this.chkProduction.UseVisualStyleBackColor = false;
+            this.chkProduction.CheckedChanged += new System.EventHandler(this.chkProduction_CheckedChanged);
+            // 
             // frm_Configuration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -406,5 +422,6 @@ namespace MyStoreManager.Setup
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBillMsg;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox chkProduction;
     }
 }

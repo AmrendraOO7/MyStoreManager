@@ -516,7 +516,6 @@ namespace MyStoreManager.PreEntry
             // 
             // txt_Name
             // 
-            this.txt_Name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txt_Name.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Name.Location = new System.Drawing.Point(118, 112);
             this.txt_Name.Name = "txt_Name";

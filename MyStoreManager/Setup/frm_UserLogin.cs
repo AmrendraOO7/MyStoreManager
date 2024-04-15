@@ -165,6 +165,7 @@ namespace MyStoreManager.Setup
                     Global.checkReturnNote = Convert.ToBoolean(initials.Rows[0]["returnNotes"]);
                     Global.billMessage = initials.Rows[0]["billMsg"].ToString();
                     Global.compType = int.Parse(initials.Rows[0]["compType"].ToString());
+                    Global.isProductionPurchase = Convert.ToBoolean(initials.Rows[0]["isProduction"].ToString());
                     System.Drawing.Color color = mainMaster.BackgroundColor();
                     Global.BackgroundColor = System.Text.RegularExpressions.Regex.Match(color.ToString(), @"\[(.*)\]").Groups[1].Value;
                     if (RoleID == 1) Global.IsAdmin = Global.CurrentSession = 1;
